@@ -8,6 +8,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- MY CSS -->
     <link rel="stylesheet" href="style.css" />
 
@@ -35,7 +38,7 @@
 
   <!-- Home -->
   <section class="jumbotron text-center">
-    <img src="img/Fathur.JPG" alt="Maulana Fathurahman" width="200" class="rounded-circle img-thumbnail" />
+    <img src="img/Fathur.JPG" alt="Maulana Fathurahman" width="200" class="rounded-circle img-thumbnail"data-aos="flip-left" />
     <h1 class="display-4">Maulana Fathurahman</h1>
     <p class="lead">Gamers | Coffee Brewer</p>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -51,7 +54,7 @@
 
   <!-- About -->
   <section id="about">
-    <div class="container">
+    <div class="container"data-aos="flip-left" data-aos-offset="310"> 
         <div class="row text-center mb-3">
         <div class="col">
           <h2><text-center>About Me</text-center></h2>
@@ -76,15 +79,15 @@
 
   <!-- Works -->
   <section id="Works">
-    <div class="container">
+    <div class="container"data-aos-offset="350">
       <div class="row text-center mb-3">
-        <div class="col">
+        <div class="col" data-aos="flip-right">
           <h2>My Works</h2>
         </div>
       </div>
       <div class="row justify-content-center">
        <div class="col-md-4 mb-3">
-        <div class="card">
+        <div class="card"data-aos="zoom-in">
             <img src="img/3.jpg" class="card-img-top" alt="Works 3" />
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -92,7 +95,7 @@
             </div>
           </div>
        <div class="col-md-4 mb-3">
-        <div class="card">
+        <div class="card" data-aos="zoom-in-up" data-aos-delay="250">
             <img src="img/1.jpg" class="card-img-top" alt="Works 1" />
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -100,7 +103,7 @@
             </div>
           </div>
        <div class="col-md-4 mb-3">
-        <div class="card">
+        <div class="card"data-aos="zoom-in-left" data-aos-delay="300">
             <img src="img/2.jpg" class="card-img-top" alt="Works 2" />
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -109,7 +112,7 @@
             </div>
           </div>
        <div class="col-md-4 mb-3">
-        <div class="card">
+        <div class="card"data-aos="zoom-in-right" data-aos-delay="350">
             <img src="img/4.jpg" class="card-img-top" alt="Works 4" />
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -118,7 +121,7 @@
             </div>
           </div>
        <div class="col-md-4 mb-3">
-        <div class="card">
+        <div class="card"data-aos="zoom-in-down" data-aos-delay="400">
             <img src="img/5.jpg" class="card-img-top" alt="Works 5" />
             <div class="card-body">
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -190,6 +193,11 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbybjD7tQ_U6HkrbPEA0-nmli0N0Oc8XPTBwecvF1NlwQ3VYWY6NO6Z0NU6ZSLo5egP6/exec';
       const form = document.forms['Portfolio-Contact-Form']
